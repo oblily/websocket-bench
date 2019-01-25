@@ -1,0 +1,41 @@
+{
+  "name": "websocket-bench",
+  "version": "0.2.0",
+  "description": "tool for benchmark websocket (socket.io, faye)",
+  "main": "index.js",
+  "scripts": {
+    "test": "gulp mocha"
+  },
+  "repository": {
+    "type": "git",
+    "url": "git://github.com/M6Web/websocket-bench.git"
+  },
+  "bin": {
+    "websocket-bench": "./bin/websocket-bench"
+  },
+  "author": "",
+  "license": "BSD",
+  "dependencies": {
+    "socket.io-client": "~2.1.1",
+    "engine.io-client": "~0.9.0",
+    "commander": "~1.1.1",
+    "colors": "~0.6",
+    "cli-table": "~0.3.0",
+    "faye": "~0.8.9",
+    "winston": "~0.7.1",
+    "socket.io": "~2.1.1",
+    "primus": "~1.5.2",
+    "autobahn": "~0.9.5"
+  },
+  "devDependencies": {
+    "chai": "~1.6.0",
+    "mocha": "*",
+    "sinon": "*",
+    "gulp": "~3.5.2",
+    "gulp-util": "~2.2.14",
+    "gulp-jshint": "~1.4.2",
+    "jshint-stylish": "~0.1.5",
+    "gulp-mocha": "~0.4.1",
+    "gulp-bump": "~0.1.5"
+  }
+}
