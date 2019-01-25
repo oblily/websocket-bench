@@ -1,9 +1,11 @@
 /**********************************************************/
+
 This is sample for bench test NodeJs server.
 
 source code is from https://github.com/M6Web/websocket-bench
 
 modify it to send extraHeader options to socket.io server.
+
 /**********************************************************/
 
 
@@ -35,6 +37,7 @@ Tip: You may find it useful to increase the maximum number of open file descript
 Simple example (using Socket.IO by default):
 
 `websocket-bench -a 2500 -c 200 http://localhost:3000`
+`websocket-bench -a 2500 -c 200 http://localhost:3000 -g lib/generator.js -m 1 -o result.txt` 
 
 Simple example (using Primus):
 
