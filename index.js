@@ -92,7 +92,8 @@ if (program.output) {
   if (program.generator.indexOf('/') !== 0) {
     program.output = __dirname + '/' + program.generator;
   }
-  outputStream = fs.createWriteStream(program.output);
+  //outputStream = fs.createWriteStream(program.output);
+  outputStream = fs.createWriteStream(program.output,'utf-8');
 }
 
 var reporter = new DefaultReporter(outputStream);
